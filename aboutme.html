@@ -2,7 +2,7 @@
 <html>
   <head>
  
-   <link rel="stylesheet" href="portfolio/aboutme.css">
+   <link onmouseover="colorchange"rel="stylesheet" href="portfolio/aboutme.css">
 <style>
   body {background-color: lightblue;}
   </head>
@@ -16,6 +16,8 @@
   <p style="color:white;">I live in Alameda California and will be going into my senior year of highschool.</p>
   <p style="color:gray;">I have always wanted to be an engineer and coding is an important skill to learn for every type of job. Girls Who Code is the perfect opportunity to do this. So far we have created many games on <a href="https://scratch.mit.edu/users/cocodyco/">scratch</a>. And as of now we are working on our own porfolio page which you are looking at here.</p>
  
+
+ 
    <nav>
   <ul>
       <li><a href="https://docs.google.com/a/alameda.k12.ca.us/document/d/1nuXFgsVyNePFSuOeNKJAEifgzLMDyeicC-EnqgjIK8Y/edit?usp=sharing">resume</a></li>
@@ -24,12 +26,53 @@
   </ul>
 </nav>
 
-  
+
+
   <p>ok well here are pictures of cute puppies (Scroll Down)</p>
   
-  <img src=http://cdn4.list25.com/wp-content/uploads/2013/04/22-24_tn.jpg  style="width:500px;height:332px">
-  <img src=https://s-media-cache-ak0.pinimg.com/originals/4b/91/56/4b915650cbe4befa0b575399cc2fd64b.jpg style="width:432px;height:324px">
- <img src=https://s-media-cache-ak0.pinimg.com/736x/95/2a/04/952a04ea85a8d1b0134516c52198745e.jpg style="width:322px;height:480px">
+  <img onmouseover="smallImg(this)" onmouseout="normalImg(this)" border="0" src="http://cdn4.list25.com/wp-content/uploads/2013/04/22-24_tn.jpg" alt="pug" width="500" height="332">
+  <p>
+  
+  <img onmouseover="smallImg2(this)" onmouseout="normalImg2(this)" border="0" src="https://s-media-cache-ak0.pinimg.com/originals/4b/91/56/4b915650cbe4befa0b575399cc2fd64b.jpg" alt="corgi" width="432" height="324">
+  <p>
+  
+  <img onmouseover="smallImg3(this)" onmouseout="normalImg3(this)" border="0" src="https://s-media-cache-ak0.pinimg.com/736x/95/2a/04/952a04ea85a8d1b0134516c52198745e.jpg" alt="pup" width="322" height="480">
+  <p>
+ 
+
+<script>
+function smallImg(x) {
+    x.style.height = "166px";
+    x.style.width = "250px";
+}
+
+function normalImg(x) {
+    x.style.height = "332px";
+    x.style.width = "500px";
+}
+
+function smallImg2(c) {
+    c.style.height = "162px";
+    c.style.width = "216px";
+}
+
+function normalImg2(c) {
+    c.style.height = "324px";
+    c.style.width = "432px";
+}
+
+function smallImg3(pup) {
+    pup.style.height = "240px";
+    pup.style.width = "161px";
+}
+
+function normalImg3(pup) {
+    pup.style.height = "480px";
+    pup.style.width = "322px";
+}
+
+
+</script>
   
   </center>
 </body>
