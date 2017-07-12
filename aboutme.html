@@ -2,7 +2,7 @@
 <html>
   <head>
  
-   <link onmouseover="colorchange"rel="stylesheet" href="portfolio/aboutme.css">
+   <link rel="stylesheet" href="portfolio/aboutme.css">
 <style>
   body {background-color: lightblue;}
   </head>
@@ -14,17 +14,18 @@
  
   <p style="color:white;">My name is Cody Tabor.</p>
   <p style="color:white;">I live in Alameda California and will be going into my senior year of highschool.</p>
-  <p style="color:gray;">I have always wanted to be an engineer and coding is an important skill to learn for every type of job. Girls Who Code is the perfect opportunity to do this. So far we have created many games on <a href="https://scratch.mit.edu/users/cocodyco/">scratch</a>. And as of now we are working on our own porfolio page which you are looking at here.</p>
+  <p style="color:gray;">I have always wanted to be an engineer and coding is an important skill to learn for every type of job. Girls Who Code is the perfect opportunity to do this. So far we have created many games on <a style="color:black"onmouseover="colorchange(this)" onmouseout="colorchange2(this)"href="https://scratch.mit.edu/users/cocodyco/">scratch</a>. And as of now we are working on our own porfolio page which you are looking at here.</p>
  
 
  
-   <nav>
-  <ul>
-      <li><a href="https://docs.google.com/a/alameda.k12.ca.us/document/d/1nuXFgsVyNePFSuOeNKJAEifgzLMDyeicC-EnqgjIK8Y/edit?usp=sharing">resume</a></li>
-      <li><a href="https://www.instagram.com/yungcodak/?hl=en">instagram</a></li>
+   
   
-  </ul>
-</nav>
+      <a style="color:black"onmouseover="colorchange(this)" onmouseout="colorchange2(this)" href="https://docs.google.com/a/alameda.k12.ca.us/document/d/1nuXFgsVyNePFSuOeNKJAEifgzLMDyeicC-EnqgjIK8Y/edit?usp=sharing">resume</a>
+      <br>
+      <a style="color:black"onmouseover="colorchange(this)" onmouseout="colorchange2(this)"href="https://www.instagram.com/yungcodak/?hl=en">instagram</a>
+  
+  
+
 
 
 
@@ -69,6 +70,14 @@ function smallImg3(pup) {
 function normalImg3(pup) {
     pup.style.height = "480px";
     pup.style.width = "322px";
+}
+
+function colorchange(x) {
+	x.style.color= "white"
+}
+
+function colorchange2(x) {
+	x.style.color= "black" 
 }
 
 
